@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.ai-image-generator{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.header{
+    text-align: center;
+    padding-bottom: 30px;
+   
+    font-family: 'Montserrat', sans-serif
+    
+   
+
+    
+}
+.header h1{
+    
+    color: blue;
+    padding-top: 0%;
+    font-size: 90px;
+}
+.header h1 span{
+    color: blueviolet;
+  
+    font-weight: 800;
+    font-size: 90px;
+   
+    
+}
+
+
+.back-video{
+    position: absolute;
+    
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+} 
+@media (min-aspect-ratio: 16/9) {
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media (max-aspect-ratio: 16/9) {
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+    
+}
+.img-loading {
+    display:flex;
+    flex-direction: column ;
+
+
+}
+.img-loading img{
+
+    width: 350px;
+    border-radius: 80%;
+
+}
+.search-box{
+    margin-top: 20px;
+    display: flex;
+    width: 900px;
+    height: 65px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background: transparent;
+    border: 1.5px solid;
+    
+} 
+.search-input{
+    width: 600px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    padding-left: 30px;
+    margin-left: 30px;
+    border-color: black;
+}
+.search-input::placeholder{
+    color: #999;
+}
+.generate-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 265px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 50px;
+    background: #DE1B89;
+    cursor: pointer;
+}
+.loading-bar{
+    width: 0px;
+    height: 8px;
+    background: #DE1B89;
+
+}
+.loading-text{
+    font-size: 18px;
+}
+.loading-bar-full{
+    width: 400px;
+    height: 8px;
+    background: #DE1B89;
+    transition: 50s;
+}
+.display-none{
+    display: none;
+
+}
